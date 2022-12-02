@@ -1,0 +1,67 @@
+*{
+    font-family: 'Patrick Hand', cursive;
+    color: seagreen;
+
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: palegreen;
+}
+.container{
+    position: relative;
+    width: 400px;
+    height: 105px;
+    background-color: #013220;
+    padding: 28px 32px;
+    overflow: hidden;
+    border-radius: 18px;
+}
+.search-box{
+    width: 100%;
+    height: min-content;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.search-box input{
+    color: palegreen;
+    background-color: #013220;
+    width: 80%;
+    font-size: 24px;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding-left: 32px;
+}
+.search-box input::placeholder{
+    font-size: 24px;
+    font-weight: 500;
+    color: seagreen;
+    text-transform: capitalize;
+}
+.search-box button{
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    color: palegreen;
+    background-color: seagreen;
+    border-radius: 50%;
+    font-size: 15px;
+    transition: .4s ease;
+}
+.search-box button:hover{
+    color: seagreen;
+    background-color: palegreen;
+}
+.fa-location-dot{
+    color: palegreen;
+    position: absolute;
+    font-size: 22px;
+}
