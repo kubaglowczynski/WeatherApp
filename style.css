@@ -23,6 +23,7 @@ body{
     padding: 28px 32px;
     overflow: hidden;
     border-radius: 18px;
+    transition: .6s ease-out;
 }
 .search-box{
     width: 100%;
@@ -122,11 +123,30 @@ body{
 .weather-details p{
     font-size: 14px;
 }
+.weather-box, 
+.weather-details{
+    scale: 0;
+    opacity: 0;
+}
 .not-found{
     width: 100%;
     text-align: center;
-    margin-top: 50px;
+    margin-top: 30px;
+    scale: 0;
+    opacity: 0;
+    display: none;
 }
 .not-found img{
     width: 90%;
+}
+.fadeIn{
+    animation: .5s fadeIn forwards;
+    animation-delay: .1s;
+}
+@keyframes fadeIn {
+    to{
+    scale: 1;
+    opacity: 1;
+    }
+
 }
