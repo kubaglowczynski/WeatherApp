@@ -1,6 +1,6 @@
 *{
     font-family: 'Patrick Hand', cursive;
-    color: seagreen;
+    color: palegreen;
 
     margin: 0;
     padding: 0;
@@ -64,4 +64,69 @@ body{
     color: palegreen;
     position: absolute;
     font-size: 22px;
+}
+.weather-box{
+    text-align: center;
+}
+.weather-box img{
+    width: 60%;
+    margin-top: 30px;
+}
+.weather-box .temperature{
+    position: relative;
+    font-size: 4rem;
+    font-weight: 500;
+    margin-top: 30px;
+    margin-left: -15px;
+}
+.weather-box .temperature span{
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 5px;
+    font-size: 1.5rem;
+}
+.weather-box .description{
+    font-size: 22px;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+.weather-details{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+.weather-details .humidity,
+.weather-details .wind{
+    display: flex;
+    align-items: center;
+    width: 50%;
+    height: 100px;
+}
+.weather-details .humidity{
+    padding-left: 20px;
+    justify-content: flex-start;
+}
+.weather-details .wind{
+    padding-right: 20px;
+    justify-content: flex-end;
+}
+.weather-details i{
+    font-size: 26px;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+.weather-details span{
+    font-size: 22px;
+}
+.weather-details p{
+    font-size: 14px;
+}
+.not-found{
+    width: 100%;
+    text-align: center;
+    margin-top: 50px;
+}
+.not-found img{
+    width: 90%;
 }
