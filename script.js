@@ -41,6 +41,7 @@ search.addEventListener('click', () => {
 
             const image = document.querySelector('.weather-box img');
             const temperature = document.querySelector('.weather-box .temperature');
+            const feelslike = document.querySelector('.weather-box .feels-like-temperature');
             const description = document.querySelector('.weather-box .description');
             const humidity = document.querySelector('.weather-details .humidity span');
             const wind = document.querySelector('.weather-details .wind span');
@@ -80,6 +81,7 @@ search.addEventListener('click', () => {
             }
 
             temperature.innerHTML = `${parseInt(json.main.temp)}<span>°C</span>`;
+            feelslike.innerHTML = `feels like: ${parseInt(json.main.feels_like)}<span>°C</span>`;
             description.innerHTML = `${json.weather[0].description}`;
             humidity.innerHTML = `${json.main.humidity}%`;
             wind.innerHTML = `${parseInt(json.wind.speed)}km/h`;
@@ -128,6 +130,7 @@ input.addEventListener('keypress', function(event){
 
             const image = document.querySelector('.weather-box img');
             const temperature = document.querySelector('.weather-box .temperature');
+            const feelslike = document.querySelector('.weather-box .feels-like-temperature');
             const description = document.querySelector('.weather-box .description');
             const humidity = document.querySelector('.weather-details .humidity span');
             const wind = document.querySelector('.weather-details .wind span');
@@ -167,6 +170,7 @@ input.addEventListener('keypress', function(event){
             }
 
             temperature.innerHTML = `${parseInt(json.main.temp)}<span>°C</span>`;
+            feelslike.innerHTML = `feels like: ${parseInt(json.main.feels_like)}<span>°C</span>`;
             description.innerHTML = `${json.weather[0].description}`;
             humidity.innerHTML = `${json.main.humidity}%`;
             wind.innerHTML = `${parseInt(json.wind.speed)}km/h`;
