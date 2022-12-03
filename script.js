@@ -4,14 +4,18 @@ const weatherBox = document.querySelector('.weather-box');
 const weatherDetails = document.querySelector('.weather-details');
 const error404 = document.querySelector('.not-found');
 const input = document.querySelector('input');
+const background = document.querySelector('.bg');
 
 search.addEventListener('click', () => {
 
     const APIKey = 'b814b4da479751cf66b8880118ab7abf';
     const city = document.querySelector('.search-box input').value;
 
-    if (city === '')
+    if (city === ''){
+        background.classList.remove('blur');
+        container.style.height = '105px';
         return;
+    }
 
     fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${APIKey}`)
         .then(response => response.json())
@@ -26,6 +30,7 @@ search.addEventListener('click', () => {
 
                 error404.style.display = 'block';
                 error404.classList.add('fadeIn');
+                background.classList.add('blur');
 
 
                 return;
@@ -83,6 +88,7 @@ search.addEventListener('click', () => {
             weatherDetails.style.display = '';
             weatherBox.classList.add('fadeIn');
             weatherDetails.classList.add('fadeIn');
+            background.classList.add('blur');
         });
 
 });
@@ -93,6 +99,7 @@ input.addEventListener('keypress', function(event){
     const city = document.querySelector('.search-box input').value;
 
     if (city === ''){
+    background.classList.remove('blur');
     container.style.height = '105px';
         return;
     }
@@ -110,6 +117,7 @@ input.addEventListener('keypress', function(event){
 
                 error404.style.display = 'block';
                 error404.classList.add('fadeIn');
+                background.classList.add('blur');
 
 
                 return;
@@ -167,6 +175,7 @@ input.addEventListener('keypress', function(event){
             weatherDetails.style.display = '';
             weatherBox.classList.add('fadeIn');
             weatherDetails.classList.add('fadeIn');
+            background.classList.add('blur');
         });
     }
 });
