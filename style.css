@@ -149,3 +149,10 @@ body{
     opacity: 1;
     }
 }
+@media screen and (max-width: 600px){
+    body {
+        margin-top: 80px;
+        overflow-x: hidden;
+        overflow-y: hidden;
+    }
+}
