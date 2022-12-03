@@ -61,6 +61,14 @@ search.addEventListener('click', () => {
                 image.src = 'https://cdn-icons-png.flaticon.com/512/1197/1197102.png?w=826&t=st=1670023277~exp=1670023877~hmac=1d50ea49d2fab5c05cbf98f270458714559869f41a2a1f665e0fd21a34f0ce18';
             break;
 
+            case 'Mist':
+                image.src = 'https://cdn-icons-png.flaticon.com/512/1197/1197102.png?w=826&t=st=1670023277~exp=1670023877~hmac=1d50ea49d2fab5c05cbf98f270458714559869f41a2a1f665e0fd21a34f0ce18';
+            break;
+                
+            case 'Drizzle':
+                image.src = 'https://cdn-icons-png.flaticon.com/512/1113/1113720.png?w=826&t=st=1670026953~exp=1670027553~hmac=ba829caa946d17bd9ab0cb31d139afd0d6fd4e6b9f566653ada465e7464d2b49';
+            break;
+
             default:
                 image.src = '';
             break;
@@ -135,6 +143,10 @@ input.addEventListener('keypress', function(event){
                 image.src = 'https://cdn-icons-png.flaticon.com/512/1197/1197102.png?w=826&t=st=1670023277~exp=1670023877~hmac=1d50ea49d2fab5c05cbf98f270458714559869f41a2a1f665e0fd21a34f0ce18';
             break; 
 
+            case 'Mist':
+                image.src = 'https://cdn-icons-png.flaticon.com/512/1197/1197102.png?w=826&t=st=1670023277~exp=1670023877~hmac=1d50ea49d2fab5c05cbf98f270458714559869f41a2a1f665e0fd21a34f0ce18';
+            break;
+
             case 'Drizzle':
                 image.src = 'https://cdn-icons-png.flaticon.com/512/1113/1113720.png?w=826&t=st=1670026953~exp=1670027553~hmac=ba829caa946d17bd9ab0cb31d139afd0d6fd4e6b9f566653ada465e7464d2b49';
             break; 
@@ -156,3 +168,12 @@ input.addEventListener('keypress', function(event){
         });
     }
 });
+$(document).ready(function(){
+    document.ontouchmove = function(e){
+        e.preventDefault();
+    }
+});
+input.onfocus = function (){
+    window.scrollTo(0.0);
+    document.body.scrollTop = 0;
+};
