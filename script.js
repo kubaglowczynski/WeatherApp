@@ -124,7 +124,7 @@ input.addEventListener('keypress', function(event){
 
             switch (json.weather[0].main){
             case 'Clear':
-                image.src = 'https://img.freepik.com/free-vector/404-error-with-landscape-concept-illustration_114360-7888.jpg?w=826&t=st=1670017612~exp=1670018212~hmac=53a94457e64b0b659dc4433fd3487d81f1dd0857fca18889cc13854a6e7bbbdf';
+                image.src = 'https://cdn-icons-png.flaticon.com/512/1244/1244034.png?w=1060&t=st=1670058797~exp=1670059397~hmac=3108d057280fbb4083f3f938c89c11427cd2c1ae7a3240e24353d35dc782ad02';
             break;
 
             case 'Rain':
