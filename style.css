@@ -6,8 +6,10 @@
     border: 0;
     outline: 0;
     box-sizing: border-box;
+    overflow: hidden;
 }
 body{
+    overflow: hidden;
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -169,18 +171,21 @@ body{
         width: 100%;
     }
     .container{
+        overflow: hidden;
         margin-top: 100px;
         width: 350px;
     }
     .bg{
-        width: 200%;
-        height: 100%;
-        overflow: hidden;
+        display: none;
     }
     .title{
         scale: 1;
         font-family: 'Kalam', cursive;
         font-size: 60px;
         color: #1b1b1b;
+    }
+    body{
+        background: url('/img/background-mobile.png');
+        background-size: cover;
     }
 }
