@@ -1,7 +1,6 @@
 *{
     font-family: 'Patrick Hand', cursive;
     color: palegreen;
-
     margin: 0;
     padding: 0;
     border: 0;
@@ -14,6 +13,11 @@ body{
     justify-content: center;
     align-items: center;
     background-color: palegreen;
+}
+.title{
+    position: absolute;
+    top: 200px;
+    scale: 0;
 }
 .bg{
     position: absolute;
@@ -159,10 +163,24 @@ body{
 }
 @media screen and (max-width: 600px){
     body {
-        margin-top: 40px;
         overflow-x: hidden;
     }
+    .search-box{
+        width: 100%;
+    }
+    .container{
+        margin-top: 100px;
+        width: 350px;
+    }
     .bg{
-        display: none;
+        width: 200%;
+        height: 100%;
+        overflow: hidden;
+    }
+    .title{
+        scale: 1;
+        font-family: 'Kalam', cursive;
+        font-size: 60px;
+        color: #1b1b1b;
     }
 }
