@@ -169,6 +169,32 @@ body{
     opacity: 1;
     }
 }
+#switch-dark{
+    background-color: lightgray;
+    border: solid 4px #013220;
+    color: #013220;
+    border-radius: 50px;
+    cursor: pointer;
+    height: 50px;
+    outline-width: 5px;
+    position: absolute;
+    top: 5%;
+    right: 10%;
+    width: 100px;
+    transition: background 0.3s, color 0.3s;
+}
+#switch-dark:hover{
+    background-color: #013220;
+    color: lightgray;
+}
+
+/* DARK MODE */
+
+body.dark{
+    background-color: darkolivegreen;
+}
+
+/* MOBILE */
 @media screen and (max-width: 600px){
     body {
         margin: 0;

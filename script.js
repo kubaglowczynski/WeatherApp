@@ -183,3 +183,33 @@ input.addEventListener('keypress', function(event){
         });
     }
 });
+
+// DARK MODE
+const switchButton = document.querySelector("#switch-dark");
+let theme = localStorage.getItem("theme");
+
+switchButton.addEventListener("click", () => {
+    if (theme === "dark") {
+        document.querySelector("body").classList.remove("dark");
+        document.querySelector("body").classList.add("light");
+        theme = "light";
+        document.getElementById("switch-dark").innerHTML = "DARK MODE";
+    } else {
+        document.querySelector("body").classList.remove("light");
+        document.querySelector("body").classList.add("dark");
+        theme = "dark";
+        document.getElementById("switch-dark").innerHTML = "LIGHT MODE";
+    }
+
+    localStorage.setItem("theme", theme);
+});
+
+if (theme === "dark") {
+    document.querySelector("body").classList.add("dark");
+    document.getElementById("switch-dark").innerHTML = "LIGHT MODE";
+}
+
+if (theme === "light") {
+    document.querySelector("body").classList.add("light");
+    document.getElementById("switch-dark").innerHTML = "DARK MODE";
+}
