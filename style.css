@@ -223,4 +223,7 @@ body.dark{
         font-size: 60px;
         color: #1b1b1b;
     }
+    #switch-dark{
+        display: none;
+    }
 }
