@@ -193,12 +193,12 @@ switchButton.addEventListener("click", () => {
         document.querySelector("body").classList.remove("dark");
         document.querySelector("body").classList.add("light");
         theme = "light";
-        document.getElementById("switch-dark").innerHTML = "DARK MODE";
+        document.getElementById("switch-dark").innerHTML = `<i id="moon" class="fa-solid fa-moon"></i>`;
     } else {
         document.querySelector("body").classList.remove("light");
         document.querySelector("body").classList.add("dark");
         theme = "dark";
-        document.getElementById("switch-dark").innerHTML = "LIGHT MODE";
+        document.getElementById("switch-dark").innerHTML = `<i id="sun" class="fa-solid fa-sun"></i>`;
     }
 
     localStorage.setItem("theme", theme);
@@ -206,10 +206,10 @@ switchButton.addEventListener("click", () => {
 
 if (theme === "dark") {
     document.querySelector("body").classList.add("dark");
-    document.getElementById("switch-dark").innerHTML = "LIGHT MODE";
+    document.getElementById("switch-dark").innerHTML = `<i id="sun" class="fa-solid fa-sun"></i>`;
 }
 
 if (theme === "light") {
     document.querySelector("body").classList.add("light");
-    document.getElementById("switch-dark").innerHTML = "DARK MODE";
+    document.getElementById("switch-dark").innerHTML = `<i id="moon" class="fa-solid fa-moon"></i>`;
 }

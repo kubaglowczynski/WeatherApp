@@ -187,11 +187,29 @@ body{
     background-color: #013220;
     color: lightgray;
 }
+#moon, #sun{
+    font-size: 25px;
+    color: #013220;
+}
+#switch-dark:hover #moon, #switch-dark:hover #sun{
+    color: lightgray;
+}
+
+/* LIGHT MODE */
+
+body.light{
+    background-color: palegreen;
+}
 
 /* DARK MODE */
 
 body.dark{
     background-color: darkolivegreen;
+}
+@media (prefers-color-scheme: dark){
+    body{
+        background-color: darkolivegreen;
+    }
 }
 
 /* MOBILE */
