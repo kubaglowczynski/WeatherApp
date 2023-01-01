@@ -1,6 +1,11 @@
+:root {
+    --darkgreen: darkolivegreen;
+    --lightgreen: palegreen;
+}
+
 *{
     font-family: 'Patrick Hand', cursive;
-    color: palegreen;
+    color: var(--lightgreen);
     margin: 0;
     padding: 0;
     border: 0;
@@ -14,7 +19,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: palegreen;
+    background-color: var(--lightgreen);
 }
 .title{
     position: absolute;
@@ -53,7 +58,7 @@ body{
     justify-content: space-between;
 }
 .search-box input{
-    color: palegreen;
+    color: var(--lightgreen);
     background-color: #013220;
     width: 80%;
     font-size: 24px;
@@ -71,7 +76,7 @@ body{
     cursor: pointer;
     width: 50px;
     height: 50px;
-    color: palegreen;
+    color: var(--lightgreen);
     background-color: seagreen;
     border-radius: 50%;
     font-size: 15px;
@@ -79,10 +84,10 @@ body{
 }
 .search-box button:hover{
     color: seagreen;
-    background-color: palegreen;
+    background-color: var(--lightgreen);
 }
 .fa-location-dot{
-    color: palegreen;
+    color: var(--lightgreen);
     position: absolute;
     font-size: 22px;
 }
@@ -198,17 +203,36 @@ body{
 /* LIGHT MODE */
 
 body.light{
-    background-color: palegreen;
+    background-color: var(--lightgreen);
+    color: var(--lightgreen);
 }
 
 /* DARK MODE */
 
 body.dark{
-    background-color: darkolivegreen;
+    background-color: var(--darkgreen);
+    color: var(--darkgreen);
 }
+body.dark .fa-location-dot{
+    color: var(--darkgreen);
+}
+body.dark .search-box button{
+    color: #013220;
+}
+body.dark .search-box button:hover{
+    background-color: var(--darkgreen);
+    color: #013220;
+}
+body.dark .container p, 
+body.dark .container span, 
+body.dark .container i, 
+body.dark .search-box input{
+    color: var(--darkgreen);
+}
+
 @media (prefers-color-scheme: dark){
     body{
-        background-color: darkolivegreen;
+        background-color: var(--darkgreen);
     }
 }
 
