@@ -186,7 +186,7 @@ body{
     top: 5%;
     right: 10%;
     width: 100px;
-    transition: background 0.3s, color 0.3s;
+    transition: background 0.2s, color 0.2s;
 }
 #switch-dark:hover{
     background-color: #013220;
